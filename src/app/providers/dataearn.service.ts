@@ -8,10 +8,10 @@ import { HttpClient } from '@angular/common/http';
 export class DataearnService {
   private PATH_CATXGAS: string = '';
   //private URL: string = 'http://localhost:3000/rest/gastosxcat'
-  private URL: string = 'http://localhost:3000/rest/usuarios/findAll/json'
+  private URL: string = 'https://proyecto7-express-production.up.railway.app'
   constructor(private http:HttpClient) { }
 
   getAllUsers(){
-    return this.http.get(this.URL)
+    return this.http.get(this.URL+'/rest/usuarios/findAll/json')
   }
 }
