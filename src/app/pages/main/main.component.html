@@ -1,1 +1,11 @@
-<p>main works!</p>
+<table>
+    <tbody>
+        <tr *ngFor="let datum of data">
+            <th> {{  datum["idUsuario"]  }}  </th>
+            <td> {{  datum["nombre"]  }}  </td>
+            <td> {{  datum["apellido"]  }} </td>
+            <td> {{  datum["email"]  }}  </td>
+            <td> {{  datum["contrasena"]  }} </td>
+        </tr>
+    </tbody>
+</table>

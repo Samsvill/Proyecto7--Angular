@@ -7,11 +7,11 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DataearnService {
   private PATH_CATXGAS: string = '';
-  private URL: string = 'http://localhost:3000/rest/gastosxcat'
+  //private URL: string = 'http://localhost:3000/rest/gastosxcat'
+  private URL: string = 'http://localhost:3000/rest/usuarios/findAll/json'
   constructor(private http:HttpClient) { }
 
-  getResponseCatxGasId(id: number){
-    this.PATH_CATXGAS = '/categoria/${id}/json'
-    return this.http.get(this.URL + this.PATH_CATXGAS)
+  getAllUsers(){
+    return this.http.get(this.URL)
   }
 }
