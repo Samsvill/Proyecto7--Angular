@@ -8,6 +8,8 @@ import { DataearnService } from '../../providers/dataearn.service';
 })
 export class MainComponent {
   public data : Usuarios[] = [];
+  displayedColumns: string[] = ['idUsuario','nombre','apellido','email','contrasena'];
+
   constructor(private dataProvider: DataearnService) { }
   
   ngOnInit() {
